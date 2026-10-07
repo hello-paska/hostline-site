@@ -1,10 +1,20 @@
-# Hostline: low-fi prototype (admin-only MVP)
+# Hostline: high-fidelity prototype (admin-only MVP)
 
-A clickable wireframe of **Hostline**, a B2B SaaS voice AI that answers restaurant calls for multi-location groups. This version is **admin-only**: one person (Alex Moreno, admin at the fictional Harbor & Hearth Group) sets up the workspace, launches restaurants and manages the phone channel. GMs still own follow-ups, but only as data: they get SMS and don't sign in.
+A clickable high-fidelity prototype of **Hostline**, a B2B SaaS voice AI that answers restaurant calls for multi-location groups. This version is **admin-only**: one person (Alex Moreno, admin at the fictional Harbor & Hearth Group) sets up the workspace, launches restaurants and manages the phone channel. GMs still own follow-ups, but only as data: they get SMS and don't sign in.
 
 The structure follows the **Hostline MVP — IA map (admin only)** in FigJam. All data is sample data: 18 locations, 2 brands (Harbor Kitchen, Hearth Pizza) and 3 regions.
 
-It is one static file (`index.html`, plain HTML/CSS/JS with no build step), in a single white theme, so it can be deployed to Vercel as is.
+It is a static site with no build step: `index.html` plus the `fonts/` folder. Deploy it to Vercel as is, or open `index.html` from a local web server (`npx serve .`).
+
+## Design system
+
+- **Components:** [Bootstrap 5.3](https://getbootstrap.com/) (MIT), themed with CSS variables
+- **Icons:** [Lucide](https://lucide.dev/) (ISC)
+- **Charts:** [Chart.js 4](https://www.chartjs.org/) (MIT)
+- **Primary font:** Yetson Sans (Regular, Medium, SemiBold) from `fonts/`
+- **Primary colour:** `#025CFD`
+
+The libraries load from the jsDelivr CDN.
 
 ## Prototype controls (top bar)
 
